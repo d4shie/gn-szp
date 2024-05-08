@@ -1,0 +1,5 @@
+dirsplit_gen is a Go source generator used for compile-time generation of
+various configuration options that take multiple items as inputs.
+
+It is horrible, hastily written, and hacky, but it allows us to cut our
+startup time by multiple tens of milliseconds, and is leet as fuck.

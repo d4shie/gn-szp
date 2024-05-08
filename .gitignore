@@ -1,0 +1,3 @@
+/bin/**
+/cmd/gn-szp/config.g.go
+/cmd/gn-szp/config.go

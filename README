@@ -1,0 +1,34 @@
+WARNING:
+ THIS IS A STRIPPED COPY OF GN-SZP, ONLY MEANT AS A SHOWCASE.
+ IT IS FROZEN ON A DEVELOPMENT COMMIT BEFORE ANY FUNCTIONALITY WAS FULLY ADDED.
+
+ This repository will be updated soon with a more up-to-date version once it is
+ further cleaned up and anonymized.
+
+
+gn-szp
+------
+gn-szp is a partial replacement for Project-ZS NG (pzs-ng) in Go.
+
+A note on performance:
+ While writing this, several individuals came up to me and said that I shouldn't
+ be writing performance-critical code in a garbage-collected language, and that
+ this was a futile effort, as I'd face an uphill battle with regards to slowdowns
+ not only by the gc, but because of the "abstraction from the hardware", and that
+ I should write this in Rust, C++, or even C.
+
+ Boy, were they wrong.. or, at least, partially.
+ By default, gn-szp does some relatively stupid things to achieve its performance,
+ such as disabling the garbage collector, but also does some really smart compiler
+ hacks that allow us to have "constexpr"-level performance for config slices.
+
+ Regardless, I'm glad to say that I've achieved my goal, and gn-szp is orders of
+ magnitude faster than pzs-ng, especially in IO-intensive operations, thanks to
+ Go's goroutine threading model; Please read performance.txt for more on this.
+
+Key differences from pzs-ng:
+ - gn-szp was written with only glftpd in mind, and as such does not feature
+   a ftpd-agnostic mode.
+
+Features:
+ - nothing yet, lol.

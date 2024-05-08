@@ -1,0 +1,2 @@
+Please make sure to set your editor's build tags to include `editor`, as that's
+the build tag used to mock certain constants for the editor & build systems.

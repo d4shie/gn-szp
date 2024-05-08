@@ -1,0 +1,3 @@
+As an end-user, to build gn-szp, you must first make a copy of the
+cmd/gn-szp/config.dist.go file into cmd/gn-szp/config.go, and make your
+modifications to it.
